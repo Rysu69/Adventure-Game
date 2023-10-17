@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class BackgroundTile extends ParallaxComponent {
   final String color;
   BackgroundTile({
-    this.color = 'Gray',
+    this.color = 'Green',
     position,
   }) : super(
           position: position,
