@@ -40,10 +40,10 @@
     <property name="offPos" type="float" value="3"/>
    </properties>
   </object>
-  <object id="37" name="Chicken" type="Chicken" x="352.795" y="398.616" width="32" height="32">
+  <object id="37" name="Chicken" type="Chicken" x="321.295" y="304.116" width="32" height="32">
    <properties>
-    <property name="offNeg" type="float" value="12"/>
-    <property name="offPos" type="float" value="5"/>
+    <property name="offNeg" type="float" value="7"/>
+    <property name="offPos" type="float" value="7"/>
    </properties>
   </object>
   <object id="49" type="Saw" x="302.477" y="171.719" width="26" height="24.6667">
@@ -61,7 +61,7 @@
    </properties>
   </object>
   <object id="109" type="Checkpoint" x="566.667" y="80.6667" width="42.6667" height="64"/>
-  <object id="114" type="Saw" x="332.503" y="317.36" width="26" height="24.6667" rotation="90">
+  <object id="114" type="Saw" x="329.003" y="383.86" width="26" height="24.6667" rotation="90">
    <properties>
     <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="8"/>
