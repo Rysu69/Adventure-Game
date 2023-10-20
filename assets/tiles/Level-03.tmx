@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="158">
+ <tileset firstgid="1" source="Pixel Adventure.tsx"/>
+ <layer id="1" name="Background" width="40" height="23">
+  <properties>
+   <property name="BackgroundColor" value="Gray"/>
+  </properties>
+  <data encoding="csv">
+36,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,37,
+38,124,125,123,0,104,123,123,62,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,64,123,124,125,38,
+38,146,147,0,0,126,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,147,38,
+38,123,0,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,38,
+38,0,0,0,0,0,0,0,0,0,212,213,0,0,0,0,0,0,0,0,0,0,0,212,213,0,0,0,0,0,0,0,124,125,0,0,0,0,0,38,
+38,0,0,0,0,0,0,0,0,211,234,235,0,0,0,0,0,0,0,0,0,0,211,234,235,189,191,0,0,0,0,123,146,147,123,0,0,0,0,38,
+38,0,0,0,216,101,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,103,38,
+38,0,0,0,0,18,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,20,216,216,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,216,38,
+38,216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354622,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
+38,0,194,195,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
+38,0,0,0,0,0,0,0,0,0,194,195,196,0,0,0,0,0,194,195,196,0,0,0,0,0,194,195,196,0,0,0,0,0,0,0,0,0,2684354623,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,194,195,196,0,0,0,2684354623,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354624,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,38,
+38,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,125,38,
+38,123,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,146,147,38,
+38,183,184,184,184,185,0,0,0,183,184,184,184,185,0,0,0,183,184,184,184,185,0,0,0,216,0,0,0,216,0,0,0,183,184,184,184,184,185,38,
+38,205,206,206,206,207,0,0,0,205,206,206,206,207,0,0,0,205,206,206,206,207,0,0,0,0,0,0,0,0,0,0,0,205,206,206,206,206,207,38,
+38,227,228,228,228,229,0,0,0,227,228,228,228,229,0,0,0,227,228,228,228,229,0,0,0,0,0,0,0,0,0,0,0,227,228,228,228,228,229,38,
+58,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,59
+</data>
+ </layer>
+ <objectgroup id="2" name="Spawnpoints">
+  <object id="37" name="Chicken" type="Chicken" x="254.295" y="63.116" width="32" height="32">
+   <properties>
+    <property name="offNeg" type="float" value="4"/>
+    <property name="offPos" type="float" value="4"/>
+   </properties>
+  </object>
+  <object id="109" type="Checkpoint" x="566.167" y="32.1667" width="42.6667" height="64"/>
+  <object id="121" type="Saw" x="398.099" y="333.686" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="122" type="Saw" x="420.599" y="333.186" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="123" type="Saw" x="443.099" y="333.686" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="124" type="Saw" x="465.599" y="333.686" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="125" type="Saw" x="487.099" y="333.686" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="126" type="Saw" x="508.099" y="333.186" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="137" type="Saw" x="444.099" y="84.6857" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="138" type="Saw" x="464.099" y="84.6857" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="144" type="Saw" x="377.099" y="333.186" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="145" type="Saw" x="355.099" y="334.186" width="18.8025" height="19.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="148" type="Saw" x="229.265" y="322.186" width="36.8025" height="33.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="150" type="Saw" x="101.599" y="321.852" width="36.8025" height="33.6285">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="0"/>
+    <property name="offPos" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="157" name="Player" type="Player" x="57.3333" y="270.667" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup id="3" name="Collisions">
+  <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
+  <object id="8" x="17.3333" y="0.83333" width="621.333" height="16"/>
+  <object id="9" x="624" y="18" width="16" height="350"/>
+  <object id="10" x="18" y="350.667" width="605.333" height="16"/>
+  <object id="12" x="17.3333" y="303.892" width="78.5" height="45.441"/>
+  <object id="14" x="159.667" y="207.833" width="48.667" height="15.3333"/>
+  <object id="64" x="144.163" y="304.071" width="79.6718" height="46.5628"/>
+  <object id="66" x="64.864" y="96.847" width="557.736" height="15.3395"/>
+  <object id="80" x="287.667" y="208.333" width="48.667" height="15.3333"/>
+  <object id="81" x="512.167" y="224.333" width="48.667" height="15.3333"/>
+  <object id="82" x="416.167" y="209.333" width="48.667" height="15.3333"/>
+  <object id="83" x="591.167" y="112.833" width="32.667" height="15.3333"/>
+  <object id="85" x="159.887" y="64.512" width="31.8321" height="30.5527"/>
+  <object id="96" x="96.028" y="17.837" width="15.9737" height="28.7197"/>
+  <object id="97" x="32.998" y="289.504" width="14.3373" height="12.9925"/>
+  <object id="98" x="17.1647" y="145.337" width="14.3373" height="12.9925"/>
+  <object id="99" x="49.498" y="18.004" width="14.3373" height="12.9925"/>
+  <object id="100" x="17.498" y="50.004" width="14.3373" height="12.9925"/>
+  <object id="101" x="16.831" y="272.67" width="14.3373" height="30.9925"/>
+  <object id="102" x="608.165" y="129.504" width="14.3373" height="12.9925"/>
+  <object id="103" x="608.831" y="49.5038" width="14.3373" height="12.9925"/>
+  <object id="104" x="576.831" y="18.1704" width="14.3373" height="12.9925"/>
+  <object id="106" x="48.8313" y="18.8371" width="14.3373" height="12.9925"/>
+  <object id="108" x="592.498" y="17.1704" width="31.004" height="29.6592"/>
+  <object id="118" x="272.164" y="303.719" width="79.6718" height="46.5628"/>
+  <object id="127" x="528.664" y="303.719" width="93.1718" height="46.5628"/>
+  <object id="128" x="80.0131" y="18.1402" width="15.9737" height="45.7197"/>
+  <object id="129" x="112.831" y="18.5038" width="14.3373" height="12.9925"/>
+  <object id="130" x="368.084" y="65.2236" width="31.8321" height="30.5527"/>
+  <object id="131" x="512.084" y="64.7236" width="31.8321" height="30.5527"/>
+  <object id="132" x="144.831" y="81.5037" width="14.3373" height="12.9925"/>
+  <object id="133" x="352.831" y="81.5037" width="14.3373" height="14.4925"/>
+  <object id="134" x="496.831" y="81.0037" width="14.3373" height="17.4925"/>
+  <object id="135" x="545.331" y="81.5037" width="14.3373" height="14.9925"/>
+  <object id="136" x="400.084" y="79.7236" width="31.8321" height="16.0527"/>
+  <object id="139" x="591.584" y="272.724" width="31.8321" height="30.5527"/>
+  <object id="140" x="607.831" y="257.004" width="14.3373" height="12.9925"/>
+  <object id="141" x="576.831" y="288.004" width="14.3373" height="15.4925"/>
+  <object id="142" x="400.831" y="303.754" width="14.3373" height="15.4925"/>
+  <object id="143" x="464.831" y="304.254" width="14.3373" height="15.4925"/>
+  <object id="147" x="32.1641" y="192.052" width="47.6718" height="15.2295"/>
+  <object id="151" x="618.164" y="144.719" width="5.6718" height="109.229"/>
+  <object id="153" x="16.8308" y="16.7186" width="31.6718" height="32.5628"/>
+  <object id="155" x="18.1647" y="48.1704" width="14.3373" height="12.9925"/>
+ </objectgroup>
+</map>
