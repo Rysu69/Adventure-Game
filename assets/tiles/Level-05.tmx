@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="164">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="103">
  <tileset firstgid="1" source="Pixel Adventure.tsx"/>
  <layer id="1" name="Background" width="40" height="23">
   <properties>
@@ -7,152 +7,168 @@
   </properties>
   <data encoding="csv">
 36,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,37,
-38,124,125,123,0,104,123,123,62,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,64,123,124,125,38,
-38,146,147,0,0,126,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,147,38,
-38,123,0,0,0,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,38,
-38,0,0,0,0,0,0,0,0,0,212,213,0,0,0,0,0,0,0,0,0,0,0,212,213,0,0,0,0,0,0,0,124,125,0,0,0,0,0,38,
-38,0,0,0,0,0,0,0,0,211,234,235,0,0,0,0,0,0,0,0,0,0,211,234,235,189,191,0,0,0,0,123,146,147,123,0,0,0,0,38,
-38,0,0,0,216,101,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102,103,38,
-38,0,0,0,18,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,20,216,216,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,216,38,
-38,216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354622,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
-38,0,0,194,195,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354623,38,
-38,0,0,0,0,0,0,0,0,0,0,194,195,196,0,0,0,0,0,194,195,196,0,0,0,0,0,194,195,196,0,0,0,0,0,0,0,0,2684354623,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,194,195,196,0,0,2684354623,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684354624,38,
-38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,38,
-38,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,125,38,
-38,123,123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,123,146,147,38,
-38,183,184,184,184,184,185,0,0,0,183,184,184,184,185,0,0,0,183,184,184,184,185,0,0,0,216,0,0,0,216,0,0,183,184,184,184,184,185,38,
-38,205,206,206,206,206,207,0,0,0,205,206,206,206,207,0,0,0,205,206,206,206,207,0,0,0,0,0,0,0,0,0,0,205,206,206,206,206,207,38,
-38,227,228,228,228,228,229,0,0,0,227,228,228,228,229,0,0,0,227,228,228,228,229,0,0,0,0,0,0,0,0,0,0,227,228,228,228,228,229,38,
+38,0,0,0,0,0,0,0,0,0,0,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,212,190,190,190,190,190,190,190,213,38,
+38,0,48,48,48,48,48,48,0,0,0,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,236,0,0,0,0,0,0,0,214,38,
+38,19,48,50,50,50,50,50,50,50,50,50,0,0,50,50,50,50,0,0,50,50,50,50,0,0,50,50,50,0,210,210,210,210,210,210,0,210,214,38,
+38,0,48,48,0,48,0,0,0,0,0,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,214,38,
+38,0,48,50,50,50,0,0,0,50,50,50,50,50,50,48,48,48,48,48,48,48,48,48,48,48,48,48,48,0,192,48,48,48,0,0,0,0,214,38,
+38,0,211,50,48,48,212,190,190,190,191,48,48,48,189,190,191,48,48,48,0,189,191,48,48,48,189,190,191,0,234,190,190,190,190,190,190,190,235,38,
+38,0,48,50,0,211,214,48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,0,48,48,0,48,48,48,71,0,0,38,
+38,0,48,50,50,50,214,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,0,48,48,48,48,48,48,71,71,0,38,
+38,0,0,0,0,0,236,0,0,0,189,190,191,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,
+38,0,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,48,0,0,0,0,0,0,48,71,71,0,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,48,48,48,48,0,0,0,0,0,0,71,71,0,18,38,
+38,212,190,190,190,190,213,0,0,0,0,0,0,0,0,192,0,0,0,212,190,190,190,190,190,190,190,190,190,190,190,190,190,190,190,190,190,190,190,38,
+38,214,0,0,0,0,214,0,0,0,0,0,0,0,0,214,18,19,20,214,0,0,0,0,48,48,48,48,48,48,48,0,0,0,0,71,71,0,48,38,
+38,234,190,190,190,190,190,190,190,190,190,190,190,190,190,235,0,0,0,236,0,0,0,0,48,48,48,48,48,48,48,0,0,0,0,71,71,0,48,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18,19,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,71,0,48,38,
+38,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,48,0,0,48,48,166,0,0,0,71,71,48,48,38,
+38,0,71,0,71,71,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,48,0,0,48,166,158,0,0,0,71,71,0,0,38,
+38,158,158,158,158,158,158,158,70,70,0,211,0,0,0,212,190,190,190,213,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71,71,0,0,38,
+38,212,190,190,190,190,190,213,70,0,0,0,0,0,212,190,190,190,190,190,213,0,0,0,48,48,48,48,48,48,48,48,167,167,0,71,71,0,0,38,
+38,214,71,0,0,0,71,214,0,0,0,0,0,71,214,71,71,71,71,71,214,71,71,71,0,76,76,76,76,76,76,76,76,76,76,76,76,76,76,38,
+38,234,190,190,190,190,190,235,70,70,70,0,0,0,234,190,190,190,190,190,235,76,76,76,76,0,0,0,76,76,76,0,76,76,0,0,0,76,76,38,
 58,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,59
 </data>
  </layer>
- <objectgroup id="2" name="Spawnpoints">
-  <object id="4" name="Player" type="Player" x="167.712" y="268.017" width="32" height="32"/>
-  <object id="37" name="Chicken" type="Chicken" x="256.518" y="60.8411" width="32" height="32">
+ <objectgroup id="2" name="Collisions">
+  <object id="1" x="307" y="193.333" width="317.333" height="14"/>
+  <object id="29" x="17" y="225.333" width="223.333" height="14"/>
+  <object id="30" x="16.3333" y="194.667" width="96" height="30"/>
+  <object id="24" x="304.334" y="207.333" width="16" height="31.3334"/>
+  <object id="28" x="239.667" y="192.667" width="16" height="46"/>
+  <object id="25" type="Platform" x="256.333" y="241.333" width="46.6667" height="14"/>
+  <object id="32" type="Platform" x="49" y="160.667" width="14" height="14"/>
+  <object id="102" type="Platform" x="609" y="176.667" width="14" height="14"/>
+  <object id="33" type="Platform" x="17" y="48" width="14" height="14"/>
+  <object id="26" type="Platform" x="257.667" y="209.333" width="46.6667" height="14"/>
+  <object id="10" x="242" y="290" width="76.6667" height="16.6667"/>
+  <object id="31" x="159.667" y="144" width="48.6667" height="16.6667"/>
+  <object id="37" x="97.6667" y="97.3333" width="77.3333" height="13.3334"/>
+  <object id="39" x="223" y="94.6667" width="48.6667" height="16.6667"/>
+  <object id="40" x="335.666" y="94.6666" width="32" height="16.6667"/>
+  <object id="41" x="432.333" y="96.6666" width="15.3333" height="16.6667"/>
+  <object id="73" x="479.667" y="96.6667" width="14.6667" height="15.3333"/>
+  <object id="46" x="494.334" y="96" width="129.333" height="16.6667"/>
+  <object id="47" x="480.333" y="16.6667" width="144" height="16.6667"/>
+  <object id="48" x="609.667" y="24" width="14.6667" height="72"/>
+  <object id="38" x="97.6667" y="96.6667" width="15.3333" height="62.6666"/>
+  <object id="13" x="176.333" y="289.333" width="15.3333" height="16.6667"/>
+  <object id="34" x="80.3334" y="111.333" width="15.3333" height="16.6667"/>
+  <object id="35" x="33.6667" y="95.3334" width="15.3333" height="16.6667"/>
+  <object id="12" x="226" y="306" width="108" height="44"/>
+  <object id="14" x="18" y="305" width="108" height="44"/>
+  <object id="4" x="3" y="354" width="622" height="14"/>
+  <object id="6" x="0.333333" y="0.666667" width="622" height="14"/>
+  <object id="3" x="624.333" y="0.666667" width="16" height="366"/>
+  <object id="5" x="0.333333" y="2" width="16" height="366"/>
+ </objectgroup>
+ <objectgroup id="3" name="Spawnpoints">
+  <object id="49" name="Player" type="Player" x="32" y="272" width="32" height="32">
    <properties>
-    <property name="offNeg" type="float" value="7"/>
-    <property name="offPos" type="float" value="7"/>
+    <property name="BackgroundColor" value="Gray"/>
    </properties>
   </object>
-  <object id="54" type="Saw" x="115.731" y="328.237" width="41.1147" height="36.9024">
+  <object id="92" name="Cherries" type="Fruit" x="272.667" y="272" width="16" height="16"/>
+  <object id="94" name="Cherries" type="Fruit" x="17.3334" y="32" width="16" height="16"/>
+  <object id="100" name="Bananas" type="Fruit" x="608.667" y="160" width="16" height="16"/>
+  <object id="83" name="Cherries" type="Fruit" x="374" y="382.667" width="16" height="16"/>
+  <object id="50" type="Checkpoint" x="545.333" y="35.3333" width="60.6667" height="58.6667"/>
+  <object id="55" type="Saw" x="184.667" y="66" width="30" height="30">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
-    <property name="offNeg" type="float" value="0"/>
-    <property name="offPos" type="float" value="0"/>
+    <property name="offNeg" type="float" value="1"/>
+    <property name="offPos" type="float" value="3"/>
    </properties>
   </object>
-  <object id="109" type="Checkpoint" x="568.106" y="51.157" width="37.6285" height="44.5668"/>
-  <object id="114" type="Saw" x="475.112" y="78.6868" width="17.363" height="24.6667" rotation="90">
+  <object id="62" type="Saw" x="122" y="86" width="30" height="30">
    <properties>
     <property name="isVertical" type="bool" value="false"/>
-    <property name="offNeg" type="float" value="8"/>
-    <property name="offPos" type="float" value="7"/>
-   </properties>
-  </object>
-  <object id="128" type="Saw" x="242.87" y="327.028" width="41.1147" height="36.9024">
-   <properties>
-    <property name="isVertical" type="bool" value="true"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="151" type="Saw" x="372.065" y="336.385" width="18.8025" height="19.6285">
+  <object id="64" type="Saw" x="112.667" y="196" width="28" height="28">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="152" type="Saw" x="395.097" y="337.104" width="18.8025" height="19.6285">
+  <object id="79" type="Saw" x="143.333" y="195.333" width="28" height="28">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="153" type="Saw" x="417.409" y="337.104" width="18.8025" height="19.6285">
+  <object id="80" type="Saw" x="176" y="195.333" width="28" height="28">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="154" type="Saw" x="439.722" y="337.104" width="18.8025" height="19.6285">
+  <object id="81" type="Saw" x="209.333" y="195" width="28" height="28">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="155" type="Saw" x="462.034" y="337.104" width="18.8025" height="19.6285">
+  <object id="76" name="Chicken" type="Chicken" x="432.667" y="320" width="30" height="30">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="7"/>
+    <property name="offPos" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="77" name="Chicken" type="Chicken" x="564" y="320" width="30" height="30">
+   <properties>
+    <property name="offNeg" type="float" value="4"/>
+    <property name="offPos" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="68" type="Saw" x="178" y="305.334" width="30" height="30">
+   <properties>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="156" type="Saw" x="484.346" y="337.824" width="18.8025" height="19.6285">
+  <object id="69" type="Saw" x="144.666" y="305.333" width="30" height="30">
    <properties>
-    <property name="isVertical" type="bool" value="true"/>
+    <property name="isVertical" type="bool" value="false"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="157" type="Saw" x="507.378" y="337.104" width="18.8025" height="19.6285">
+  <object id="61" type="Saw" x="284" y="64" width="30" height="30">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
-    <property name="offNeg" type="float" value="0"/>
-    <property name="offPos" type="float" value="0"/>
+    <property name="offNeg" type="float" value="1"/>
+    <property name="offPos" type="float" value="3"/>
    </properties>
   </object>
- </objectgroup>
- <objectgroup id="3" name="Collisions">
-  <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
-  <object id="8" x="17.3333" y="0.83333" width="621.333" height="16"/>
-  <object id="9" x="624" y="18" width="16" height="350"/>
-  <object id="10" x="18" y="350.667" width="605.333" height="16"/>
-  <object id="35" x="529.552" y="304.004" width="94.448" height="44.6624"/>
-  <object id="82" x="528.113" y="223.117" width="47.2275" height="16.053"/>
-  <object id="85" x="160.772" y="302.518" width="77.622" height="48.5464"/>
-  <object id="99" x="16.224" y="145.835" width="14.3373" height="12.9925"/>
-  <object id="100" x="64.4409" y="97.4464" width="14.3373" height="12.9925"/>
-  <object id="102" x="608.165" y="112.95" width="14.3373" height="29.5467"/>
-  <object id="103" x="608.831" y="49.5038" width="14.3373" height="12.9925"/>
-  <object id="104" x="576.831" y="18.1704" width="14.3373" height="12.9925"/>
-  <object id="105" x="18.1647" y="50.1704" width="14.3373" height="12.9925"/>
-  <object id="106" x="48.8313" y="18.8371" width="14.3373" height="12.9925"/>
-  <object id="107" x="16.1647" y="17.5038" width="31.004" height="29.6592"/>
-  <object id="108" x="592.498" y="17.1704" width="31.004" height="29.6592"/>
-  <object id="138" x="592.498" y="273.401" width="31.004" height="29.6592"/>
-  <object id="115" x="64.5721" y="112.399" width="15.2816" height="559.251" rotation="269.933"/>
-  <object id="116" x="160.423" y="64.0386" width="31.1101" height="29.5477"/>
-  <object id="119" x="368.071" y="65.1182" width="31.1101" height="29.5477"/>
-  <object id="120" x="512.02" y="65.1182" width="31.1101" height="29.5477"/>
-  <object id="121" x="401.179" y="80.9526" width="31.1101" height="13.7132"/>
-  <object id="122" x="143.509" y="80.2329" width="15.2756" height="14.433"/>
-  <object id="124" x="352.236" y="79.873" width="15.2756" height="14.433"/>
-  <object id="125" x="496.186" y="80.5928" width="15.2756" height="14.433"/>
-  <object id="126" x="544.409" y="80.5928" width="15.2756" height="14.433"/>
-  <object id="127" x="288.179" y="304.434" width="80.053" height="44.6624"/>
-  <object id="129" x="16.8336" y="270.606" width="15.2756" height="30.9872"/>
-  <object id="130" x="32.6681" y="287.16" width="15.2756" height="14.433"/>
-  <object id="131" x="416.294" y="305.154" width="15.2756" height="14.433"/>
-  <object id="132" x="480.351" y="305.874" width="15.2756" height="14.433"/>
-  <object id="133" x="432.707" y="208.618" width="47.2275" height="16.053"/>
-  <object id="134" x="304.591" y="207.898" width="47.2275" height="16.053"/>
-  <object id="136" x="176.476" y="207.898" width="47.2275" height="16.053"/>
-  <object id="137" x="48" y="191" width="47.2275" height="16.053"/>
-  <object id="139" x="607.747" y="256.211" width="15.2756" height="14.433"/>
-  <object id="140" x="575.358" y="287.16" width="15.2756" height="14.433"/>
-  <object id="159" x="593.101" y="113.702" width="14.3373" height="12.9925"/>
-  <object id="160" x="80.1714" y="18.3346" width="16.7151" height="45.3822"/>
-  <object id="161" x="98.8849" y="18.3346" width="13.1164" height="29.5477"/>
-  <object id="162" x="113.28" y="17.9747" width="15.2756" height="14.433"/>
-  <object id="163" x="16.5223" y="304.06" width="94.2887" height="48.5464"/>
+  <object id="74" type="Saw" x="385.333" y="64.6666" width="30" height="30">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="1"/>
+    <property name="offPos" type="float" value="3"/>
+   </properties>
+  </object>
+  <object id="98" type="Saw" x="394.666" y="176" width="30" height="30">
+   <properties>
+    <property name="isVertical" type="bool" value="false"/>
+    <property name="offNeg" type="float" value="1"/>
+    <property name="offPos" type="float" value="3"/>
+   </properties>
+  </object>
+  <object id="99" type="Saw" x="545.333" y="176.667" width="30" height="30">
+   <properties>
+    <property name="isVertical" type="bool" value="false"/>
+    <property name="offNeg" type="float" value="1"/>
+    <property name="offPos" type="float" value="3"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

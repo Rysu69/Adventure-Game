@@ -81,14 +81,14 @@
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="137" type="Saw" x="444.099" y="84.6857" width="18.8025" height="19.6285">
+  <object id="137" type="Saw" x="446.099" y="81.1857" width="18.8025" height="19.6285">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
     <property name="offNeg" type="float" value="0"/>
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="138" type="Saw" x="464.099" y="84.6857" width="18.8025" height="19.6285">
+  <object id="138" type="Saw" x="466.599" y="81.6857" width="18.8025" height="19.6285">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
     <property name="offNeg" type="float" value="0"/>
