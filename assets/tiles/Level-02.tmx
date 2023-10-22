@@ -59,7 +59,7 @@
     <property name="offPos" type="float" value="3"/>
    </properties>
   </object>
-  <object id="109" type="Checkpoint" x="566.667" y="80.6667" width="42.6667" height="64"/>
+  <object id="109" type="Checkpoint" x="560" y="80.6667" width="64.3334" height="64"/>
   <object id="114" type="Saw" x="329.003" y="383.86" width="26" height="24.6667" rotation="90">
    <properties>
     <property name="isVertical" type="bool" value="false"/>

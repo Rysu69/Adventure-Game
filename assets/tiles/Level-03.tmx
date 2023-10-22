@@ -38,7 +38,7 @@
     <property name="offPos" type="float" value="4"/>
    </properties>
   </object>
-  <object id="109" type="Checkpoint" x="566.167" y="32.1667" width="42.6667" height="64"/>
+  <object id="109" type="Checkpoint" x="558.167" y="31.1667" width="65.1667" height="64"/>
   <object id="121" type="Saw" x="398.099" y="333.686" width="18.8025" height="19.6285">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
@@ -81,14 +81,7 @@
     <property name="offPos" type="float" value="0"/>
    </properties>
   </object>
-  <object id="137" type="Saw" x="444.099" y="84.6857" width="18.8025" height="19.6285">
-   <properties>
-    <property name="isVertical" type="bool" value="true"/>
-    <property name="offNeg" type="float" value="0"/>
-    <property name="offPos" type="float" value="0"/>
-   </properties>
-  </object>
-  <object id="138" type="Saw" x="464.099" y="84.6857" width="18.8025" height="19.6285">
+  <object id="137" type="Saw" x="450.599" y="84.1857" width="28" height="28">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
     <property name="offNeg" type="float" value="0"/>
