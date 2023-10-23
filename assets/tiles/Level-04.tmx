@@ -32,7 +32,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="Spawnpoints">
-  <object id="4" name="Player" type="Player" x="61" y="271" width="32" height="32">
+  <object id="4" name="Player" type="Player" x="472" y="77" width="32" height="32">
    <properties>
     <property name="test" value="47,00 273,00"/>
    </properties>
@@ -114,13 +114,10 @@
     <property name="offPos" type="float" value="2"/>
    </properties>
   </object>
-  <object id="150" name="Kiwi" type="Fruit" x="198.417" y="245.917" width="16" height="16"/>
-  <object id="151" name="Kiwi" type="Fruit" x="111.917" y="167.083" width="16" height="16"/>
   <object id="152" name="Kiwi" type="Fruit" x="31.75" y="214.917" width="16" height="16"/>
   <object id="153" name="Cherries" type="Fruit" x="271.75" y="127.75" width="16" height="16"/>
-  <object id="155" name="Cherries" type="Fruit" x="71" y="54.75" width="16" height="16"/>
-  <object id="156" name="Cherries" type="Fruit" x="479.75" y="95.5" width="16" height="16"/>
-  <object id="157" name="Kiwi" type="Fruit" x="563.667" y="240.833" width="28.6667" height="23.3333"/>
+  <object id="155" name="Apple" type="Fruit" x="71" y="54.75" width="16" height="16"/>
+  <object id="157" name="Kiwi" type="Fruit" x="563.667" y="240.833" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
   <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
