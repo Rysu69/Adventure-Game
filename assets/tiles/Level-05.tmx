@@ -47,7 +47,7 @@
   <object id="116" x="543" y="240" width="31.333" height="14"/>
   <object id="127" x="592.333" y="322" width="31.333" height="28.6667"/>
   <object id="29" x="17" y="225.333" width="223.333" height="14"/>
-  <object id="30" x="16.3333" y="194.667" width="96" height="30"/>
+  <object id="30" x="16.3333" y="192" width="96" height="32.6667"/>
   <object id="24" x="304.334" y="207.333" width="16" height="31.3334"/>
   <object id="28" x="239.667" y="192.667" width="16" height="46"/>
   <object id="25" type="Platform" x="256.333" y="241.333" width="46.6667" height="14"/>

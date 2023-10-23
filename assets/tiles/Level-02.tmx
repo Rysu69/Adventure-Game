@@ -67,7 +67,7 @@
     <property name="offPos" type="float" value="7"/>
    </properties>
   </object>
-  <object id="118" name="Player" type="Player" x="508" y="270" width="32" height="32"/>
+  <object id="118" name="Player" type="Player" x="499.25" y="271.25" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
   <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
@@ -79,20 +79,20 @@
   <object id="20" type="Platform" x="113.082" y="224.221" width="30.8333" height="5.5"/>
   <object id="35" x="560.501" y="142.78" width="63.4988" height="205.886"/>
   <object id="64" x="112.163" y="288.571" width="64.6718" height="62.5628"/>
-  <object id="112" x="449.496" y="321.904" width="64.6718" height="28.5022"/>
+  <object id="112" x="449.496" y="320.404" width="47.4218" height="30.0022"/>
   <object id="66" x="225.864" y="338.847" width="221.236" height="10.3395"/>
   <object id="69" type="Platform" x="113.333" y="255.75" width="30.8333" height="5.5"/>
   <object id="80" x="240.167" y="177.333" width="48.667" height="15.3333"/>
   <object id="81" x="335.667" y="176.333" width="48.667" height="15.3333"/>
   <object id="82" x="431.667" y="176.333" width="48.667" height="15.3333"/>
   <object id="83" x="512.167" y="160.333" width="32.667" height="15.3333"/>
-  <object id="84" x="496.917" y="303" width="63.4988" height="45.886"/>
+  <object id="84" x="497.417" y="304.5" width="63.4988" height="45.386"/>
   <object id="85" x="175.887" y="320.512" width="48.8321" height="30.5527"/>
   <object id="96" x="176.528" y="304.837" width="15.9737" height="13.7197"/>
   <object id="97" x="113.498" y="273.504" width="14.3373" height="12.9925"/>
   <object id="98" x="16.1647" y="176.837" width="14.3373" height="12.9925"/>
   <object id="100" x="15.498" y="161.504" width="14.3373" height="12.9925"/>
-  <object id="101" x="544.831" y="288.17" width="14.3373" height="12.9925"/>
+  <object id="101" x="544.831" y="288.17" width="14.3373" height="14.9925"/>
   <object id="102" x="608.165" y="129.504" width="14.3373" height="12.9925"/>
   <object id="103" x="608.831" y="49.5038" width="14.3373" height="12.9925"/>
   <object id="104" x="576.831" y="18.1704" width="14.3373" height="12.9925"/>
