@@ -25,6 +25,8 @@ enum PlayerState {
 
 class Player extends SpriteAnimationGroupComponent
     with HasGameRef<PixelAdventure>, KeyboardHandler, CollisionCallbacks {
+  int collectedFruits = 0;
+  int requiredFruits = 4;
   String character;
   Player({
     position,
@@ -107,7 +109,6 @@ class Player extends SpriteAnimationGroupComponent
 
     hasJumped = keysPressed.contains(LogicalKeyboardKey.space) ||
         keysPressed.contains(LogicalKeyboardKey.keyW);
-    
 
     return super.onKeyEvent(event, keysPressed);
   }
@@ -116,6 +117,7 @@ class Player extends SpriteAnimationGroupComponent
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
     if (!reachedCheckpoint) {
+      if (other is Fruit) collectedFruits++;
       if (other is Fruit) other.collidedWithPlayer();
       if (other is Saw) _respawn();
       if (other is Chicken) other.collidedWithPlayer();
@@ -285,26 +287,31 @@ class Player extends SpriteAnimationGroupComponent
   }
 
   void _reachedCheckpoint() async {
-    reachedCheckpoint = true;
-    if (game.playSounds) {
-      FlameAudio.play('disappear.wav', volume: game.soundVolume);
+    if (collectedFruits >= requiredFruits) {
+      reachedCheckpoint = true;
+      if (game.playSounds) {
+        FlameAudio.play('disappear.wav', volume: game.soundVolume);
+      }
+      if (scale.x > 0) {
+        position = position - Vector2.all(32);
+      } else if (scale.x < 0) {
+        position = position + Vector2(32, -32);
+      }
+
+      current = PlayerState.disappearing;
+
+      await animationTicker?.completed;
+      animationTicker?.reset();
+
+      reachedCheckpoint = false;
+      position = Vector2.all(-640);
+    
+    // Reset collectedFruits to zero after reaching the checkpoint
+      collectedFruits = 0;
+
+      const waitToChangeDuration = Duration(seconds: 3);
+      Future.delayed(waitToChangeDuration, () => game.loadNextLevel());
     }
-    if (scale.x > 0) {
-      position = position - Vector2.all(32);
-    } else if (scale.x < 0) {
-      position = position + Vector2(32, -32);
-    }
-
-    current = PlayerState.disappearing;
-
-    await animationTicker?.completed;
-    animationTicker?.reset();
-
-    reachedCheckpoint = false;
-    position = Vector2.all(-640);
-
-    const waitToChangeDuration = Duration(seconds: 3);
-    Future.delayed(waitToChangeDuration, () => game.loadNextLevel());
   }
 
   void collidedwithEnemy() {

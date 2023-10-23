@@ -15,6 +15,8 @@ class PixelAdventure extends FlameGame
         DragCallbacks,
         HasCollisionDetection,
         TapCallbacks {
+  get checkpoint => null;
+
   @override
   Color backgroundColor() => const Color(0xFF211F30);
   late CameraComponent cam;
@@ -24,7 +26,7 @@ class PixelAdventure extends FlameGame
 
   bool playSounds = true;
   double soundVolume = 1.0;
-    List<String> levelNames = [ 'Level-01', 'Level-02', 'Level-03', 'Level-04', 'Level-05' ];
+    List<String> levelNames = [ 'Level-04', 'Level-04', 'Level-03', 'Level-04', 'Level-05' ];
   int currentLevelIndex = 0;
 
   @override
