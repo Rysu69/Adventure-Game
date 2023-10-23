@@ -59,7 +59,7 @@
     <property name="offPos" type="float" value="3"/>
    </properties>
   </object>
-  <object id="109" type="Checkpoint" x="560" y="80.6667" width="64.3334" height="64"/>
+  <object id="109" type="Checkpoint" x="560" y="80.3334" width="64.3334" height="64"/>
   <object id="114" type="Saw" x="329.003" y="383.86" width="26" height="24.6667" rotation="90">
    <properties>
     <property name="isVertical" type="bool" value="false"/>
@@ -67,32 +67,31 @@
     <property name="offPos" type="float" value="7"/>
    </properties>
   </object>
-  <object id="118" name="Player" type="Player" x="508" y="270" width="32" height="32"/>
+  <object id="118" name="Player" type="Player" x="508" y="271" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
   <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
   <object id="8" x="17.3333" y="0.83333" width="621.333" height="16"/>
   <object id="9" x="624" y="18" width="16" height="350"/>
   <object id="10" x="18" y="350.667" width="605.333" height="16"/>
-  <object id="12" x="17.3333" y="190.892" width="94" height="158.441"/>
-  <object id="14" x="142.667" y="177.333" width="48.667" height="15.3333"/>
-  <object id="20" type="Platform" x="113.082" y="224.221" width="30.8333" height="5.5"/>
-  <object id="35" x="560.501" y="142.78" width="63.4988" height="205.886"/>
-  <object id="64" x="112.163" y="288.571" width="64.6718" height="62.5628"/>
-  <object id="112" x="449.496" y="321.904" width="64.6718" height="28.5022"/>
-  <object id="66" x="225.864" y="338.847" width="221.236" height="10.3395"/>
-  <object id="69" type="Platform" x="113.333" y="255.75" width="30.8333" height="5.5"/>
-  <object id="80" x="240.167" y="177.333" width="48.667" height="15.3333"/>
+  <object id="12" x="17.3333" y="192.142" width="93.5" height="157.191"/>
+  <object id="14" x="143.917" y="176.333" width="48.667" height="15.3333"/>
+  <object id="20" type="Platform" x="112.082" y="224.221" width="31.8333" height="5.5"/>
+  <object id="35" x="560.501" y="144.78" width="63.4988" height="203.886"/>
+  <object id="64" x="111.663" y="288.571" width="63.9218" height="62.5628"/>
+  <object id="112" x="448.163" y="320.904" width="47.3385" height="29.5022"/>
+  <object id="66" x="225.864" y="336.847" width="221.236" height="12.3395"/>
+  <object id="69" type="Platform" x="112.083" y="255.75" width="32.0833" height="5.5"/>
+  <object id="80" x="239.917" y="176.333" width="48.667" height="15.3333"/>
   <object id="81" x="335.667" y="176.333" width="48.667" height="15.3333"/>
   <object id="82" x="431.667" y="176.333" width="48.667" height="15.3333"/>
   <object id="83" x="512.167" y="160.333" width="32.667" height="15.3333"/>
   <object id="84" x="496.917" y="303" width="63.4988" height="45.886"/>
   <object id="85" x="175.887" y="320.512" width="48.8321" height="30.5527"/>
-  <object id="96" x="176.528" y="304.837" width="15.9737" height="13.7197"/>
-  <object id="97" x="113.498" y="273.504" width="14.3373" height="12.9925"/>
-  <object id="98" x="16.1647" y="176.837" width="14.3373" height="12.9925"/>
-  <object id="100" x="15.498" y="161.504" width="14.3373" height="12.9925"/>
-  <object id="101" x="544.831" y="288.17" width="14.3373" height="12.9925"/>
+  <object id="96" x="176.528" y="304.837" width="15.7237" height="14.9697"/>
+  <object id="97" x="112.498" y="272.754" width="14.3373" height="14.4925"/>
+  <object id="98" x="16.1647" y="160.337" width="15.3373" height="30.9925"/>
+  <object id="101" x="544.831" y="288.17" width="14.3373" height="14.6592"/>
   <object id="102" x="608.165" y="129.504" width="14.3373" height="12.9925"/>
   <object id="103" x="608.831" y="49.5038" width="14.3373" height="12.9925"/>
   <object id="104" x="576.831" y="18.1704" width="14.3373" height="12.9925"/>
