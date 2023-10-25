@@ -7,6 +7,8 @@ import 'package:pixel_adventure/pixel_adventure.dart';
 
 class Checkpoint extends SpriteAnimationComponent
     with HasGameRef<PixelAdventure>, CollisionCallbacks {
+  int collectedFruits = 0;
+  int requiredFruits = 4;
   Checkpoint({
     position,
     size,
@@ -23,7 +25,7 @@ class Checkpoint extends SpriteAnimationComponent
       size: Vector2(12, 8),
       collisionType: CollisionType.passive,
     ));
-
+    
     animation = SpriteAnimation.fromFrameData(
       game.images
           .fromCache('Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png'),

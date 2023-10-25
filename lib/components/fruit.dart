@@ -69,7 +69,7 @@ class Fruit extends SpriteAnimationComponent
       await animationTicker?.completed;
       removeFromParent();
       gameRef.checkpoint.collectedFruits++;
-      gameRef.player.collectedFruits++;
+      // gameRef.player.collectedFruits++;
 
     }
   }
