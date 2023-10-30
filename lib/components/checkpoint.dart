@@ -7,8 +7,9 @@ import 'package:pixel_adventure/pixel_adventure.dart';
 
 class Checkpoint extends SpriteAnimationComponent
     with HasGameRef<PixelAdventure>, CollisionCallbacks {
-  int collectedFruits = 0;
-  int requiredFruits = 4;
+
+//  static int requiredFruits = 4;
+
   Checkpoint({
     position,
     size,
@@ -25,7 +26,7 @@ class Checkpoint extends SpriteAnimationComponent
       size: Vector2(12, 8),
       collisionType: CollisionType.passive,
     ));
-    
+
     animation = SpriteAnimation.fromFrameData(
       game.images
           .fromCache('Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png'),
@@ -38,27 +39,28 @@ class Checkpoint extends SpriteAnimationComponent
     return super.onLoad();
   }
 
-  @override
+  @override 
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
-    if (other is Player) {
+    if (other is Player && collectedFruits >= requiredFruits) {
       _reachedCheckpoint();
     }
     super.onCollisionStart(intersectionPoints, other);
   }
 
   void _reachedCheckpoint() async {
-    animation = SpriteAnimation.fromFrameData(
-      game.images.fromCache(
-          'Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png'),
-      SpriteAnimationData.sequenced(
-        amount: 26,
-        stepTime: 0.05,
-        textureSize: Vector2.all(64),
-        loop: false,
-      ),
-    );
-
+  
+      animation = SpriteAnimation.fromFrameData(
+        game.images.fromCache(
+            'Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png'),
+        SpriteAnimationData.sequenced(
+          amount: 26,
+          stepTime: 0.05,
+          textureSize: Vector2.all(64),
+          loop: false,
+        ),
+      );
+    
     await animationTicker?.completed;
 
     animation = SpriteAnimation.fromFrameData(

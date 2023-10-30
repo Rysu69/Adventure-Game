@@ -22,11 +22,11 @@ enum PlayerState {
   appearing,
   disappearing
 }
+int collectedFruits = 0;
+int requiredFruits = 4;
 
 class Player extends SpriteAnimationGroupComponent
     with HasGameRef<PixelAdventure>, KeyboardHandler, CollisionCallbacks {
-  int collectedFruits = 0;
-  int requiredFruits = 4;
   String character;
   Player({
     position,
