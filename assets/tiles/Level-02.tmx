@@ -60,13 +60,6 @@
    </properties>
   </object>
   <object id="109" type="Checkpoint" x="560" y="80.3334" width="64.3334" height="64"/>
-  <object id="114" type="Saw" x="329.003" y="383.86" width="26" height="24.6667" rotation="90">
-   <properties>
-    <property name="isVertical" type="bool" value="false"/>
-    <property name="offNeg" type="float" value="8"/>
-    <property name="offPos" type="float" value="7"/>
-   </properties>
-  </object>
   <object id="118" name="Player" type="Player" x="591.333" y="223.917" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
