@@ -33,10 +33,10 @@
  </layer>
  <objectgroup id="2" name="Spawnpoints">
   <object id="4" name="Player" type="Player" x="48" y="270" width="32" height="32"/>
-  <object id="69" name="Apple" type="Fruit" x="64" y="141" width="16" height="16"/>
-  <object id="70" name="Apple" type="Fruit" x="64" y="238.333" width="16" height="16"/>
-  <object id="71" name="Apple" type="Fruit" x="520.333" y="298.999" width="16" height="16"/>
-  <object id="72" name="Apple" type="Fruit" x="329" y="152.333" width="16" height="16"/>
+  <object id="69" name="Apple" type="Fruit" x="61.4022" y="134.073" width="24" height="24"/>
+  <object id="70" name="Apple" type="Fruit" x="61.4022" y="231.406" width="24" height="24"/>
+  <object id="71" name="Apple" type="Fruit" x="517.735" y="292.072" width="24" height="24"/>
+  <object id="72" name="Apple" type="Fruit" x="326.402" y="145.406" width="24" height="24"/>
   <object id="34" type="Saw" x="146.667" y="323" width="26" height="26">
    <properties>
     <property name="isVertical" type="bool" value="true"/>
