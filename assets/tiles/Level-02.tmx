@@ -102,10 +102,9 @@
   <object id="108" x="592.498" y="17.1704" width="31.004" height="29.6592"/>
   <object id="116" x="32" y="176" width="16" height="16"/>
   <object id="137" x="17.6667" y="191.667" width="46" height="47.3333"/>
-  <object id="138" x="63" y="224.333" width="48.6667" height="14.6666"/>
+  <object id="138" x="48" y="224.333" width="63.6667" height="29.6666"/>
   <object id="139" x="65.0131" y="208.14" width="15.9737" height="15.7197"/>
   <object id="141" x="64.2631" y="255.64" width="15.9737" height="15.2197"/>
-  <object id="142" x="47.7631" y="239.64" width="63.9737" height="15.2197"/>
   <object id="143" x="17.0131" y="239.89" width="15.9737" height="31.4697"/>
   <object id="145" x="17.1647" y="18.5037" width="31.004" height="29.6592"/>
   <object id="146" x="17.498" y="48.8371" width="14.3373" height="12.9925"/>
