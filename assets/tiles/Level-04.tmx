@@ -32,7 +32,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="Spawnpoints">
-  <object id="4" name="Player" type="Player" x="53" y="270" width="32" height="32">
+  <object id="4" name="Player" type="Player" x="48" y="270" width="32" height="32">
    <properties>
     <property name="test" value="47,00 273,00"/>
    </properties>

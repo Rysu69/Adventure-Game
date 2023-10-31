@@ -86,7 +86,7 @@
   <object id="104" x="3" y="0.666667" width="16" height="366"/>
  </objectgroup>
  <objectgroup id="3" name="Spawnpoints">
-  <object id="49" name="Player" type="Player" x="63" y="270" width="32" height="32">
+  <object id="49" name="Player" type="Player" x="48" y="270" width="32" height="32">
    <properties>
     <property name="BackgroundColor" value="Gray"/>
    </properties>

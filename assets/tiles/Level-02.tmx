@@ -63,7 +63,7 @@
    </properties>
   </object>
   <object id="109" type="Checkpoint" x="560" y="80.3334" width="64.3334" height="64"/>
-  <object id="118" name="Player" type="Player" x="34.083" y="271.25" width="32" height="32"/>
+  <object id="118" name="Player" type="Player" x="48" y="270" width="32" height="32"/>
   <object id="144" name="Apple" type="Fruit" x="601" y="235.5" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
@@ -71,14 +71,13 @@
   <object id="8" x="17.3333" y="0.83333" width="621.333" height="16"/>
   <object id="9" x="624" y="18" width="16" height="350"/>
   <object id="10" x="16.5" y="353.667" width="606.833" height="13"/>
-  <object id="12" x="17" y="303.667" width="94" height="47.3333"/>
+  <object id="12" x="17" y="303" width="159" height="48"/>
   <object id="14" x="143.417" y="176.333" width="48.667" height="15.3333"/>
   <object id="20" type="Platform" x="113.082" y="224.221" width="30.8333" height="5.5"/>
   <object id="35" x="560.501" y="144.447" width="63.4988" height="47.2193"/>
   <object id="119" x="560.834" y="304.447" width="62.4988" height="46.5527"/>
   <object id="120" x="608.168" y="256.113" width="14.8321" height="47.886"/>
   <object id="124" x="560.834" y="192.113" width="14.8321" height="31.886"/>
-  <object id="64" x="111.413" y="302.571" width="65.4218" height="48.5628"/>
   <object id="112" x="449.496" y="320.654" width="47.1718" height="29.7522"/>
   <object id="66" x="225" y="336.25" width="221" height="16"/>
   <object id="69" type="Platform" x="113.333" y="255.75" width="30.8333" height="5.5"/>
@@ -88,7 +87,7 @@
   <object id="83" x="512.167" y="160.333" width="32.667" height="15.3333"/>
   <object id="84" x="497.417" y="304.5" width="63.4988" height="45.386"/>
   <object id="85" x="175.887" y="320.512" width="48.8321" height="30.5527"/>
-  <object id="96" x="176.528" y="304.837" width="15.9737" height="13.7197"/>
+  <object id="96" x="176.528" y="303" width="15.9737" height="16"/>
   <object id="98" x="16" y="176" width="16" height="16"/>
   <object id="100" x="16" y="160.004" width="16" height="16"/>
   <object id="101" x="528.667" y="288" width="31.3333" height="16"/>
