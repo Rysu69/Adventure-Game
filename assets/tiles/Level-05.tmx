@@ -91,11 +91,10 @@
     <property name="BackgroundColor" value="Gray"/>
    </properties>
   </object>
-  <object id="92" name="Cherries" type="Fruit" x="272.667" y="272" width="16" height="16"/>
-  <object id="94" name="Cherries" type="Fruit" x="17.3334" y="32" width="16" height="16"/>
-  <object id="100" name="Bananas" type="Fruit" x="608.667" y="160" width="16" height="16"/>
-  <object id="113" name="Bananas" type="Fruit" x="599.334" y="303.333" width="16" height="16"/>
-  <object id="83" name="Cherries" type="Fruit" x="374" y="382.667" width="16" height="16"/>
+  <object id="92" name="Cherries" type="Fruit" x="269.203" y="263.341" width="24" height="24"/>
+  <object id="94" name="Cherries" type="Fruit" x="13.8697" y="23.3408" width="24" height="24"/>
+  <object id="100" name="Bananas" type="Fruit" x="605.203" y="151.341" width="24" height="24"/>
+  <object id="113" name="Bananas" type="Fruit" x="595.87" y="294.674" width="24" height="24"/>
   <object id="50" type="Checkpoint" x="545.333" y="37" width="60.6667" height="58.6667"/>
   <object id="55" type="Saw" x="184.667" y="66" width="30" height="30">
    <properties>

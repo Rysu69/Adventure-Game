@@ -114,10 +114,10 @@
     <property name="offPos" type="float" value="2"/>
    </properties>
   </object>
-  <object id="152" name="Kiwi" type="Fruit" x="31.75" y="214.917" width="16" height="16"/>
-  <object id="153" name="Cherries" type="Fruit" x="271.75" y="127.75" width="16" height="16"/>
-  <object id="155" name="Apple" type="Fruit" x="71" y="54.75" width="16" height="16"/>
-  <object id="157" name="Kiwi" type="Fruit" x="563.667" y="240.833" width="16" height="16"/>
+  <object id="152" name="Kiwi" type="Fruit" x="31.75" y="214.917" width="24" height="24"/>
+  <object id="153" name="Cherries" type="Fruit" x="271.75" y="127.75" width="24" height="24"/>
+  <object id="155" name="Apple" type="Fruit" x="71" y="54.75" width="24" height="24"/>
+  <object id="157" name="Kiwi" type="Fruit" x="563.667" y="240.833" width="24" height="24"/>
  </objectgroup>
  <objectgroup id="3" name="Collisions">
   <object id="7" x="7.10543e-15" y="7.10543e-15" width="16" height="368"/>
