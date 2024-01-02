@@ -18,20 +18,27 @@ class PixelAdventure extends FlameGame
   get checkpoint => null;
 
   @override
-  Color backgroundColor() => const Color(0xFF211F30);
+  Color backgroundColor() => const Color(0xFF211F30); // Warna background
   late CameraComponent cam;
-  Player player = Player(character: 'Mask Dude');
+  Player player = Player(character: 'Ninja Frog');
   late JoystickComponent joystick;
-  bool showControls = false;
+  bool showControls = false; // Menampilkan UI kontrol
 
-  bool playSounds = true;
-  double soundVolume = 0.3;
-    List<String> levelNames = [ 'Level-01', 'Level-02', 'Level-03', 'Level-04', 'Level-05' ];
+  bool playSounds = true; // Putar suara
+  double soundVolume = 0.3; // Volume
+  List<String> levelNames = [
+    'Level-01',
+    'Level-02',
+    'Level-03',
+    'Level-04',
+    'Level-05'
+  ];
+  //inisiasi lvl
   int currentLevelIndex = 0;
 
   @override
   FutureOr<void> onLoad() async {
-    // Load all images into cache
+    // Load semua gambar ke dalam cache
     await images.loadAllImages();
 
     _loadLevel();
@@ -52,6 +59,7 @@ class PixelAdventure extends FlameGame
     super.update(dt);
   }
 
+//menampilkan joystick
   void addJoystick() {
     joystick = JoystickComponent(
       priority: 10,
@@ -89,6 +97,7 @@ class PixelAdventure extends FlameGame
     }
   }
 
+//logic ketika pindah lvl selanjutnya
   void loadNextLevel() {
     removeWhere((component) => component is Level);
 
@@ -109,6 +118,7 @@ class PixelAdventure extends FlameGame
         levelName: levelNames[currentLevelIndex],
       );
 
+//posisi kamere/layar
       cam = CameraComponent.withFixedResolution(
         world: world,
         width: 640,

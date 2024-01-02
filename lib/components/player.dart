@@ -22,6 +22,7 @@ enum PlayerState {
   appearing,
   disappearing
 }
+
 int collectedFruits = 0;
 int requiredFruits = 4;
 
@@ -30,7 +31,7 @@ class Player extends SpriteAnimationGroupComponent
   String character;
   Player({
     position,
-    this.character = 'Ninja Frog',
+    this.character = '',
   }) : super(position: position);
 
   final double stepTime = 0.05;
@@ -44,7 +45,8 @@ class Player extends SpriteAnimationGroupComponent
 
   final double _gravity = 9.8; // Mengatur gravitasi
   final double _jumpForce = 260; // Mengatur seberapa tinggi player lompat
-  final double _terminalVelocity = 300; // Mengatur jarak loncatan ke kanan/kiri saat di udara
+  final double _terminalVelocity =
+      300; // Mengatur jarak loncatan ke kanan/kiri saat di udara
   double horizontalMovement = 0;
   double moveSpeed = 100; // Mengatur kecepatan player
   Vector2 startingPosition = Vector2.zero(); // Posisi awal player
@@ -319,7 +321,7 @@ class Player extends SpriteAnimationGroupComponent
 
       reachedCheckpoint = false;
       position = Vector2.all(-640);
-    
+
       // Reset poin setelah menyentuh checkpoint
       collectedFruits = 0;
 
