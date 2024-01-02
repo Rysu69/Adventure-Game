@@ -21,6 +21,7 @@ class Checkpoint extends SpriteAnimationComponent
   @override
   FutureOr<void> onLoad() {
     // debugMode = true;
+    //mengatur hitbox checkpoint
     add(RectangleHitbox(
       position: Vector2(18, 56),
       size: Vector2(12, 8),
@@ -39,6 +40,7 @@ class Checkpoint extends SpriteAnimationComponent
     return super.onLoad();
   }
 
+//logic ketika player bersentuhan dengan checkpoint
   @override 
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
@@ -48,6 +50,7 @@ class Checkpoint extends SpriteAnimationComponent
     super.onCollisionStart(intersectionPoints, other);
   }
 
+ //animasi ketika menyentuh checkpoint
   void _reachedCheckpoint() async {
   
       animation = SpriteAnimation.fromFrameData(

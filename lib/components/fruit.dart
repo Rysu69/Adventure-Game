@@ -25,6 +25,7 @@ class Fruit extends SpriteAnimationComponent
     width: 12,
     height: 12,
   );
+
   bool collected = false;
 
   @override
@@ -50,6 +51,7 @@ class Fruit extends SpriteAnimationComponent
     return super.onLoad();
   }
 
+//logic ketika buah bertabrakan dengan player
   void collidedWithPlayer() async {
     if (!collected) {
       collected = true;

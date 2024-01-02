@@ -42,12 +42,12 @@ class Player extends SpriteAnimationGroupComponent
   late final SpriteAnimation appearingAnimation;
   late final SpriteAnimation disappearingAnimation;
 
-  final double _gravity = 9.8;
-  final double _jumpForce = 260;
-  final double _terminalVelocity = 300;
+  final double _gravity = 9.8; // Mengatur gravitasi
+  final double _jumpForce = 260; // Mengatur seberapa tinggi player lompat
+  final double _terminalVelocity = 300; // Mengatur jarak loncatan ke kanan/kiri saat di udara
   double horizontalMovement = 0;
-  double moveSpeed = 100;
-  Vector2 startingPosition = Vector2.zero();
+  double moveSpeed = 100; // Mengatur kecepatan player
+  Vector2 startingPosition = Vector2.zero(); // Posisi awal player
   Vector2 velocity = Vector2.zero();
   bool isOnGround = false;
   bool hasJumped = false;
@@ -63,6 +63,7 @@ class Player extends SpriteAnimationGroupComponent
   double fixedDeltaTime = 1 / 60;
   double accumulatedTime = 0;
 
+  // Saat load
   @override
   FutureOr<void> onLoad() {
     _loadAllAnimations();
@@ -77,6 +78,7 @@ class Player extends SpriteAnimationGroupComponent
     return super.onLoad();
   }
 
+  // Update
   @override
   void update(double dt) {
     accumulatedTime += dt;
@@ -96,6 +98,7 @@ class Player extends SpriteAnimationGroupComponent
     super.update(dt);
   }
 
+  // Menentukan pengaturan tombol gerak kanan, kiri, dan lompat
   @override
   bool onKeyEvent(RawKeyEvent event, Set<LogicalKeyboardKey> keysPressed) {
     horizontalMovement = 0;
@@ -113,6 +116,7 @@ class Player extends SpriteAnimationGroupComponent
     return super.onKeyEvent(event, keysPressed);
   }
 
+  // Objek player terkena objek lain
   @override
   void onCollisionStart(
       Set<Vector2> intersectionPoints, PositionComponent other) {
@@ -126,6 +130,7 @@ class Player extends SpriteAnimationGroupComponent
     super.onCollisionStart(intersectionPoints, other);
   }
 
+  // Load semua animasi
   void _loadAllAnimations() {
     idleAnimation = _spriteAnimation('Idle', 11);
     runningAnimation = _spriteAnimation('Run', 12);
@@ -135,7 +140,7 @@ class Player extends SpriteAnimationGroupComponent
     appearingAnimation = _specialSpriteAnimation('Appearing', 7);
     disappearingAnimation = _specialSpriteAnimation('Desappearing', 7);
 
-    // List of all animations
+    // Data animasi player
     animations = {
       PlayerState.idle: idleAnimation,
       PlayerState.running: runningAnimation,
@@ -146,10 +151,11 @@ class Player extends SpriteAnimationGroupComponent
       PlayerState.disappearing: disappearingAnimation,
     };
 
-    // Set current animation
+    // Awal animasi player
     current = PlayerState.idle;
   }
 
+  // Animasi player
   SpriteAnimation _spriteAnimation(String state, int amount) {
     return SpriteAnimation.fromFrameData(
       game.images.fromCache('Main Characters/$character/$state (32x32).png'),
@@ -161,6 +167,7 @@ class Player extends SpriteAnimationGroupComponent
     );
   }
 
+  // Animasi spesial player
   SpriteAnimation _specialSpriteAnimation(String state, int amount) {
     return SpriteAnimation.fromFrameData(
       game.images.fromCache('Main Characters/$state (96x96).png'),
@@ -173,6 +180,7 @@ class Player extends SpriteAnimationGroupComponent
     );
   }
 
+  // Update keadaan pemain
   void _updatePlayerState() {
     PlayerState playerState = PlayerState.idle;
 
@@ -182,13 +190,13 @@ class Player extends SpriteAnimationGroupComponent
       flipHorizontallyAroundCenter();
     }
 
-    // Check if moving, set running
+    // Cek ketika bergerak, set running
     if (velocity.x > 0 || velocity.x < 0) playerState = PlayerState.running;
 
-    // check if Falling set to falling
+    // Cek ketika jatuh, set falling
     if (velocity.y > 0) playerState = PlayerState.falling;
 
-    // Checks if jumping, set to jumping
+    // Cek ketika lompat, set jumping
     if (velocity.y < 0) playerState = PlayerState.jumping;
 
     current = playerState;
@@ -203,6 +211,7 @@ class Player extends SpriteAnimationGroupComponent
     position.x += velocity.x * dt;
   }
 
+  // Fungsi player saat lompat
   void _playerJump(double dt) {
     if (game.playSounds) FlameAudio.play('jump.wav', volume: game.soundVolume);
     velocity.y = -_jumpForce;
@@ -211,6 +220,14 @@ class Player extends SpriteAnimationGroupComponent
     hasJumped = false;
   }
 
+  // Menerapkan gravitasi
+  void _applyGravity(double dt) {
+    velocity.y += _gravity;
+    velocity.y = velocity.y.clamp(-_jumpForce, _terminalVelocity);
+    position.y += velocity.y * dt;
+  }
+
+  // Logika hit collisions horizontal
   void _checkHorizontalCollisions() {
     for (final block in collisionBlocks) {
       if (!block.isPlatform) {
@@ -230,12 +247,7 @@ class Player extends SpriteAnimationGroupComponent
     }
   }
 
-  void _applyGravity(double dt) {
-    velocity.y += _gravity;
-    velocity.y = velocity.y.clamp(-_jumpForce, _terminalVelocity);
-    position.y += velocity.y * dt;
-  }
-
+  // Logika hit collisions vertical
   void _checkVerticalCollisions() {
     for (final block in collisionBlocks) {
       if (block.isPlatform) {
@@ -264,6 +276,7 @@ class Player extends SpriteAnimationGroupComponent
     }
   }
 
+  // Player respawn
   void _respawn() async {
     if (game.playSounds) FlameAudio.play('hit.wav', volume: game.soundVolume);
     const canMoveDuration = Duration(milliseconds: 400);
@@ -286,6 +299,7 @@ class Player extends SpriteAnimationGroupComponent
     Future.delayed(canMoveDuration, () => gotHit = false);
   }
 
+  // Ketika menyentuh checkpoint
   void _reachedCheckpoint() async {
     if (collectedFruits >= requiredFruits) {
       reachedCheckpoint = true;
@@ -306,14 +320,16 @@ class Player extends SpriteAnimationGroupComponent
       reachedCheckpoint = false;
       position = Vector2.all(-640);
     
-    // Reset collectedFruits to zero after reaching the checkpoint
+      // Reset poin setelah menyentuh checkpoint
       collectedFruits = 0;
 
+      // Mengatur durasi loading
       const waitToChangeDuration = Duration(seconds: 3);
       Future.delayed(waitToChangeDuration, () => game.loadNextLevel());
     }
   }
 
+  // Bertabrakan dengan musuh
   void collidedwithEnemy() {
     _respawn();
   }

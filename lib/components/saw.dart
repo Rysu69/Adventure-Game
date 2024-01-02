@@ -19,9 +19,9 @@ class Saw extends SpriteAnimationComponent with HasGameRef<PixelAdventure> {
           size: size,
         );
 
-  static const double sawSpeed = 0.03;
-  static const moveSpeed = 100;
-  static const tileSize = 16;
+  static const double sawSpeed = 0.03; // Kecepatan rotasi saw
+  static const moveSpeed = 100; // Kecepatan gerak saw
+  static const tileSize = 16; // Ukuran saw
   double moveDirection = 1;
   double rangeNeg = 0;
   double rangePos = 0;
@@ -49,6 +49,7 @@ class Saw extends SpriteAnimationComponent with HasGameRef<PixelAdventure> {
     return super.onLoad();
   }
 
+  // Update saw
   @override
   void update(double dt) {
     if (isVertical) {
@@ -59,6 +60,7 @@ class Saw extends SpriteAnimationComponent with HasGameRef<PixelAdventure> {
     super.update(dt);
   }
 
+  // Saw saat gerak vertical
   void _moveVertically(double dt) {
     if (position.y >= rangePos) {
       moveDirection = -1;
@@ -68,6 +70,7 @@ class Saw extends SpriteAnimationComponent with HasGameRef<PixelAdventure> {
     position.y += moveDirection * moveSpeed * dt;
   }
 
+  // Saw saat gerak horizontal
   void _moveHorizontally(double dt) {
     if (position.x >= rangePos) {
       moveDirection = -1;

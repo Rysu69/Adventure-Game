@@ -22,7 +22,7 @@ class PixelAdventure extends FlameGame
   late CameraComponent cam;
   Player player = Player(character: 'Mask Dude');
   late JoystickComponent joystick;
-  bool showControls = true;
+  bool showControls = false;
 
   bool playSounds = true;
   double soundVolume = 0.3;

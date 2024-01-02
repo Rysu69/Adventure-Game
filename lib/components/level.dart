@@ -31,6 +31,7 @@ class Level extends World with HasGameRef<PixelAdventure> {
     return super.onLoad();
   }
 
+  // Atur background
   void _scrollingBackground() {
     final backgroundLayer = level.tileMap.getLayer('Background');
 
@@ -45,6 +46,7 @@ class Level extends World with HasGameRef<PixelAdventure> {
     }
   }
 
+  // Spawn objek-objek
   void _spawningObjects() {
     final spawnPointsLayer = level.tileMap.getLayer<ObjectGroup>('Spawnpoints');
 
@@ -101,6 +103,7 @@ class Level extends World with HasGameRef<PixelAdventure> {
     }
   }
 
+  // Tambah collision
   void _addCollisions() {
     final collisionsLayer = level.tileMap.getLayer<ObjectGroup>('Collisions');
 
