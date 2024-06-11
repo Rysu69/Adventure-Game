@@ -8,7 +8,7 @@ import 'package:pixel_adventure/pixel_adventure.dart';
 class Checkpoint extends SpriteAnimationComponent
     with HasGameRef<PixelAdventure>, CollisionCallbacks {
 
-//  static int requiredFruits = 4;
+ static int requiredFruits = 4;
 
   Checkpoint({
     position,

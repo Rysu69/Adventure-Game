@@ -4,7 +4,7 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
-import 'package:flutter/painting.dart';
+import 'package:flutter/material.dart';
 import 'package:pixel_adventure/components/jump_button.dart';
 import 'package:pixel_adventure/components/player.dart';
 import 'package:pixel_adventure/components/level.dart';
@@ -15,17 +15,16 @@ class PixelAdventure extends FlameGame
         DragCallbacks,
         HasCollisionDetection,
         TapCallbacks {
-  get checkpoint => null;
+  final VoidCallback onBackToMenu;
 
-  @override
-  Color backgroundColor() => const Color(0xFF211F30); // Warna background
+  PixelAdventure({required this.onBackToMenu});
+
   late CameraComponent cam;
   Player player = Player(character: 'Ninja Frog');
   late JoystickComponent joystick;
-  bool showControls = false; // Menampilkan UI kontrol
-
-  bool playSounds = true; // Putar suara
-  double soundVolume = 0.3; // Volume
+  bool showControls = true;
+  bool playSounds = true;
+  double soundVolume = 0.3;
   List<String> levelNames = [
     'Level-01',
     'Level-02',
@@ -33,14 +32,14 @@ class PixelAdventure extends FlameGame
     'Level-04',
     'Level-05'
   ];
-  //inisiasi lvl
   int currentLevelIndex = 0;
 
-  @override
-  FutureOr<void> onLoad() async {
-    // Load semua gambar ke dalam cache
-    await images.loadAllImages();
+  int fruitsCollected = 0;
+  final int fruitsRequired = 4;
 
+  @override
+  Future<void> onLoad() async {
+    await images.loadAllImages();
     _loadLevel();
 
     if (showControls) {
@@ -48,6 +47,7 @@ class PixelAdventure extends FlameGame
       add(JumpButton());
     }
 
+    addBackButton();
     return super.onLoad();
   }
 
@@ -59,23 +59,14 @@ class PixelAdventure extends FlameGame
     super.update(dt);
   }
 
-//menampilkan joystick
   void addJoystick() {
     joystick = JoystickComponent(
       priority: 10,
-      knob: SpriteComponent(
-        sprite: Sprite(
-          images.fromCache('HUD/Knob.png'),
-        ),
-      ),
-      background: SpriteComponent(
-        sprite: Sprite(
-          images.fromCache('HUD/Joystick.png'),
-        ),
-      ),
+      knob: SpriteComponent(sprite: Sprite(images.fromCache('HUD/Knob.png'))),
+      background:
+          SpriteComponent(sprite: Sprite(images.fromCache('HUD/Joystick.png'))),
       margin: const EdgeInsets.only(left: 32, bottom: 32),
     );
-
     add(joystick);
   }
 
@@ -97,36 +88,44 @@ class PixelAdventure extends FlameGame
     }
   }
 
-//logic ketika pindah lvl selanjutnya
   void loadNextLevel() {
     removeWhere((component) => component is Level);
-
     if (currentLevelIndex < levelNames.length - 1) {
       currentLevelIndex++;
       _loadLevel();
     } else {
-      // no more levels
       currentLevelIndex = 0;
       _loadLevel();
     }
   }
 
   void _loadLevel() {
-    Future.delayed(const Duration(seconds: 1), () {
-      Level world = Level(
-        player: player,
-        levelName: levelNames[currentLevelIndex],
-      );
+    fruitsCollected = 0; // Reset the fruit counter for the new level
+    Level world =
+        Level(player: player, levelName: levelNames[currentLevelIndex]);
+    cam = CameraComponent.withFixedResolution(
+        world: world, width: 640, height: 360);
+    cam.viewfinder.anchor = Anchor.topLeft;
+    addAll([cam, world]);
+  }
 
-//posisi kamere/layar
-      cam = CameraComponent.withFixedResolution(
-        world: world,
-        width: 640,
-        height: 360,
-      );
-      cam.viewfinder.anchor = Anchor.topLeft;
+  void addBackButton() {
+    add(SpriteButtonComponent(
+      position:
+          Vector2(60, 32), // Adjusted position to move the button to the right
+      size: Vector2(50, 50),
+      // button: Sprite(images.fromCache('HUD/BackButton.png')),
+      // buttonDown: Sprite(images.fromCache('HUD/BackButtonPressed.png')),
+      button: Sprite(images.fromCache('HUD/Knob.png')),
+      buttonDown: Sprite(images.fromCache('HUD/Knob.png')),
+      onPressed: onBackToMenu,
+    ));
+  }
 
-      addAll([cam, world]);
-    });
+  void onFruitCollected() {
+    fruitsCollected++;
+    if (fruitsCollected >= fruitsRequired) {
+      loadNextLevel();
+    }
   }
 }

@@ -1,16 +1,22 @@
-import 'package:flame/flame.dart';
-import 'package:flame/game.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:pixel_adventure/pixel_adventure.dart';
+import 'package:pixel_adventure/menu_screen.dart';
+import 'package:pixel_adventure/game_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Flame.device.fullScreen();
-  await Flame.device.setLandscape();
+void main() {
+  runApp(PixelAdventureApp());
+}
 
-  PixelAdventure game = PixelAdventure();
-  runApp(
-    GameWidget(game: kDebugMode ? PixelAdventure() : game),
-  );
+class PixelAdventureApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Pixel Adventure',
+      theme: ThemeData.dark(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MenuScreen(),
+        '/game': (context) => GameScreen(),
+      },
+    );
+  }
 }
